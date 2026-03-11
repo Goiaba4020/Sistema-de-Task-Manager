@@ -1,9 +1,11 @@
-package com.gerenciamentodetarefas.demo.services;
+package com.gerenciamentodetarefas.demo.Service;
 
 import java.util.List;
+
 import org.springframework.stereotype.Service;
+
 import com.gerenciamentodetarefas.demo.model.Task;
-import com.gerenciamentodetarefas.demo.repository.TaskRepository;
+import com.gerenciamentodetarefas.demo.Repository.TaskRepository;
 
 @Service
 public class TaskService {

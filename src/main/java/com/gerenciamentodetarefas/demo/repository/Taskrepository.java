@@ -1,7 +1,16 @@
-package com.gerenciamentodetarefas.demo.repository;
+package com.gerenciamentodetarefas.demo.Repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+import org.springframework.data.jpa.Repository.JpaRepository;
+
 import com.gerenciamentodetarefas.demo.model.Task;
 
 public interface TaskRepository extends JpaRepository<Task, Long> {
+
+    public List<Task> findAll();
+
+    public Task save(Task task);
+
+    public Object findById(Long id);
 }
